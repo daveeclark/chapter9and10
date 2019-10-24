@@ -74,3 +74,33 @@ An instance variable lives as long as the object does (can only use when it is i
 
 Chapter 10: Numbers and statics: Numbers Matter
 (pg. 299 online pdf, 273 in book)
+
+Methods in the Math class don't use any instance variables because the methods are 'static' meaning you don't need to have an instnace of Math, just the Math class
+
+Static method - allows a method to run without any instance of the class like Math
+
+It is impossible to instantiate an abstract class
+
+Static methods cannot use non-static (instance) variables
+Static methods cannot use non-static methods
+
+All static variables in a class are initialized before any object of that class can be created
+
+Static final variables are constants
+A static initializer is a block of code that runs when a class is loaded, before any other code can yse the class. Making it great to initialize a static final variable
+
+Constant variable names should be in all caps
+
+A final variable means you can't change its value
+A final method means you can't override the method
+A final class means you can't extend the class
+
+A static method can be invoked without any instances of the method's class on the heap (where all objects live)
+
+A static method is not associated with a particular instance, only the class, so it cannont access any instance variables values of its class.
+
+A static variable is a variable shared by all members of a given class
+
+To make a constraint, mark a variable as both static and final
+
+Assigning a value to a final instance variable must be either at the time it is declared or in the constructor
